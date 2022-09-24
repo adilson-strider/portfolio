@@ -7,10 +7,10 @@ app = Flask(__name__)
 app.secret_key = 'strider'
 
 mail_settings = {
-    "MAIL_SERVER": 'smtp.gmail.com',
-    "MAIL_PORT": 465,
-    "MAIL_USE_TLS": False,
-    "MAIL_USE_SSL": True,
+    "MAIL_SERVER": 'smtp-mail.outlook.com',
+    "MAIL_PORT": 587,
+    "MAIL_USE_TLS": True,
+    "MAIL_USE_SSL": False,
     "MAIL_USERNAME": email,
     "MAIL_PASSWORD": senha
 }
@@ -19,9 +19,9 @@ app.config.update(mail_settings)
 mail = Mail(app)
 
 class Contato:
-    def __init__(nome, email, mensagem):
-        self.nome = nome,
-        self.email = email,
+    def __init__(self, nome, email, mensagem):
+        self.nome = nome
+        self.email = email
         self.mensagem = mensagem
 
 @app.route('/')
@@ -40,7 +40,7 @@ def send():
         msg = Message(
             subject = f'{formContato.nome} te enviou uma mensagem do portfólio!',
             sender = app.config.get("MAIL_USERNAME"),
-            recipients = ['adilson.santos.eteot@gmail.com'],
+            recipients = ['adilson.santos.eteot@gmail.com', app.config.get("MAIL_USERNAME")],
             body = f'''
 
             {formContato.nome} com o email {formContato.email}, te enviou a seguinte

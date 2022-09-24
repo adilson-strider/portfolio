@@ -95,7 +95,8 @@
 
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <img class="img-fluid shadow" src="../static/img/perfil2.jpeg" alt="Foto do Adilson" data-anime="left">
+                    <img class="img-fluid shadow" src="../static/img/perfil2.jpeg" alt="Foto do Adilson"
+                        data-anime="left">
                 </div>
 
                 <div class="col-md-8" data-anime="right">
@@ -357,7 +358,8 @@
                             <h4>Estagiário em desenvolvimento C#</h4>
                             <h5>2015 - 2015</h5>
                             <p><em>Overlord</em></p>
-                            <p>Programador C# na startup Overlord, local onde atuei na criação de desenvolvimentos em jogos. Auxiliar na criação do
+                            <p>Programador C# na startup Overlord, local onde atuei na criação de desenvolvimentos em
+                                jogos. Auxiliar na criação do
                                 Game Design.</p>
                         </div>
                     </div>
@@ -384,12 +386,14 @@
                             <div class="row row-cols-1 row-cols-md-3 g-4">
                                 <div class="col">
                                     <div class="card">
-                                        <img src="../static/img/screen_code_coffee.jpg" class="card-img-top" alt="Code Coffee">
+                                        <img src="../static/img/screen_code_coffee.jpg" class="card-img-top"
+                                            alt="Code Coffee">
                                         <div class="card-body">
                                             <h5 class="card-title">Code Coffee</h5>
-                                            <p class="card-text">Uma simples landing page escrita em HTML, CSS e Javascript.</p>
+                                            <p class="card-text">Uma simples landing page escrita em HTML, CSS e
+                                                Javascript.</p>
                                             <div class="d-flex justify-content-center">
-                                                    <a href="https://adilson-strider.github.io/landing-page-coffee/"
+                                                <a href="https://adilson-strider.github.io/landing-page-coffee/"
                                                     target='_blank' class="btn btn-outline-dark me-3"><i
                                                         class="bi bi-github"></i></a>
                                             </div>
@@ -398,10 +402,12 @@
                                 </div>
                                 <div class="col">
                                     <div class="card">
-                                        <img src="../static/img/previsao-do-tempo.jpg" class="card-img-top img-fluid w-100" alt="print do blog">
+                                        <img src="../static/img/previsao-do-tempo.jpg"
+                                            class="card-img-top img-fluid w-100" alt="print do blog">
                                         <div class="card-body">
                                             <h5 class="card-title">Previsão do tempo</h5>
-                                            <p class="card-text">Feito em Javascript, consumindo a API da OpenWeatherMap.</p>
+                                            <p class="card-text">Feito em Javascript, consumindo a API da
+                                                OpenWeatherMap.</p>
                                             <div class="d-flex justify-content-center">
                                                 <a href="https://adilson-strider.github.io/weather-report-app/"
                                                     target='_blank' class="btn btn-outline-dark me-3"><i
@@ -417,9 +423,9 @@
                                             <h5 class="card-title">Título do projeto</h5>
                                             <p class="card-text">Descrição do projeto.</p>
                                             <div class="d-flex justify-content-center">
-                                                <a href="" target='_blank'
-                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
-                                                
+                                                <a href="" target='_blank' class="btn btn-outline-dark me-3"><i
+                                                        class="bi bi-github"></i></a>
+
                                             </div>
                                         </div>
                                     </div>
@@ -437,9 +443,9 @@
                                             <h5 class="card-title">Título do projeto</h5>
                                             <p class="card-text">Descrição do projeto.</p>
                                             <div class="d-flex justify-content-center">
-                                                <a href="" target='_blank'
-                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
-                                                
+                                                <a href="" target='_blank' class="btn btn-outline-dark me-3"><i
+                                                        class="bi bi-github"></i></a>
+
                                             </div>
 
                                         </div>
@@ -452,8 +458,7 @@
                                             <h5 class="card-title">Título do projeto</h5>
                                             <p class="card-text">Descrição do projeto.</p>
                                             <div class="d-flex justify-content-center">
-                                                <a href=""
-                                                    target='_blank' class="btn btn-outline-dark me-3"><i
+                                                <a href="" target='_blank' class="btn btn-outline-dark me-3"><i
                                                         class="bi bi-github"></i></a>
                                             </div>
                                         </div>
@@ -468,7 +473,7 @@
                                             <div class="d-flex justify-content-center">
                                                 <a href="https://github.com/codethi/thi.code" target='_blank'
                                                     class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
-                                                
+
                                             </div>
 
                                         </div>
@@ -526,33 +531,61 @@
 
                         <div class="card p-5 h-100 shadow border-0">
 
-                            <form method="POST" class="row g-3">
+                            <form method="POST" class="row g-3" action="/send">
                                 <div class="col-md-6">
                                     <label for="nome" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="nome" name="nome">
+                                    <input type="text" class="form-control" id="nome" name="nome" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="assunto" class="form-label">Assunto</label>
-                                    <input type="text" class="form-control" id="assunto" name="assunto">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="text" class="form-control" id="email" name="email" required>
                                 </div>
                                 <div class="col-12">
                                     <label for="mensagem" class="form-label">Mensagem</label>
                                     <textarea type="text" class="form-control" id="mensagem"
-                                        placeholder="Digite sua mensagem" name="mensagem"></textarea>
+                                        placeholder="Digite sua mensagem" name="mensagem" required></textarea>
                                 </div>
 
                                 <div class="col-12 d-flex justify-content-center">
-                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                    <button id="enviar" type="submit" class="btn btn-primary">Enviar</button>
+
+                                    <button class="btn btn-primary" type="button" id="carregando" disabled>
+                                        <span class="spinner-border spinner-border-sm" role="status"
+                                            aria-hidden="true"></span>
+                                        Enviando...
+                                    </button>
                                 </div>
+
                             </form>
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
+
+            <i class="bi bi-check-circle-fill"></i> {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
 
     </main>
+
+    <footer id="rodape">
+        <div class="container">
+            <div class="text-center">
+                &copy; Copyright <strong>Adilson</strong>
+            </div>
+        </div>
+    </footer>
 
     <!-- carregando bootstrap.js e script.js -->
     <script src="../static/bootstrap/js/bootstrap.bundle.js"></script>
