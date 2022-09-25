@@ -26,7 +26,11 @@
   $headers .= "From: $nome <$email>";
 
   //Enviar
-  mail($destino, $assunto, $arquivo, $headers);
-  
-  echo "<meta http-equiv='refresh' content='10;URL=../contato.html'>";
+    if (mail($destino, $assunto, $arquivo, $headers)) {
+        echo '<p>Your message has been sent!</p>';
+    } else {
+        echo '<p>Something went wrong, go back and try again!</p>';
+    }
+
+  echo "<meta http-equiv='refresh' content='5;URL=index.php'>";
 ?>
