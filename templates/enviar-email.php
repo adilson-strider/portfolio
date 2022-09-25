@@ -22,7 +22,7 @@ try{
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'exploit7@hotmail.com';                     //SMTP username
     $mail->Password   = 'Q1w2e3Q1w2e3$';                               //SMTP password
-    $mail->SMTPSecure = "tls";            //Enable implicit TLS encryption
+    $mail->SMTPSecure = tls;            //Enable implicit TLS encryption
     $mail->Port       = 587;  
 
     $mail->setFrom($mail->Username , 'Adilson');
