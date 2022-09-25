@@ -523,7 +523,7 @@
                     <div class="col-md-7" data-anime="right">
 
                         <div class="card p-5 h-100 shadow border-0">
-                            <form method="POST" class="row g-3" action="enviar-email.php">
+                            <form method="POST" class="row g-3" action="../templates/enviar-email.php">
 
                                 <div class="col-md-6">
                                     <label for="nome" class="form-label">Nome</label>

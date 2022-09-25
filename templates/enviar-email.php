@@ -22,7 +22,7 @@ try{
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = $user;                     //SMTP username
     $mail->Password   = $pass;                               //SMTP password
-    $mail->SMTPSecure = tls;            //Enable implicit TLS encryption
+    $mail->SMTPSecure = "tls";            //Enable implicit TLS encryption
     $mail->Port       = 587;  
 
     $mail->setFrom($mail->Username , 'Adilson');
@@ -43,6 +43,7 @@ try{
     $mail->send();
 
     echo "A mensagem foi enviada com sucesso!";
+    echo "<meta http-equiv='refresh' content='5; URL=index.php'>";
 
 } catch (Exception $e) {
     echo "A mensagem não pôde ser enviada. Código do erro: {$mail->ErrorInfo}";
