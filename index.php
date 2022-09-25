@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <link rel="icon" href="img/asset-15.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <title>Teste portfólio do Adilson</title>
+    <title>Meu portfólio</title>
 </head>
 
 <body>
@@ -78,8 +78,6 @@
         </section>
 
         <section class="container mt-5" id="sobre">
-            <!-- mt = margin-top -->
-
             <div class="row w-100">
                 <div class="col-md-12" data-anime="down">
                     <h2 class="pt-3">
@@ -95,14 +93,15 @@
 
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <img class="img-fluid shadow" src="../static/img/perfil2.jpeg" alt="Foto do Adilson" data-anime="left">
+                    <img class="img-fluid shadow" src="../static/img/perfil2.jpeg" alt="Foto do Adilson"
+                        data-anime="left">
                 </div>
 
                 <div class="col-md-8" data-anime="right">
                     <p>
                         Atualmente estudo o desenvolvimento de páginas utilizando o HTML, CSS com Bootstrap e
                         Javascript. Este portfólio foi construído utilizando essas tecnologias, sendo a parte Back-End
-                        responsável pelo envio de emails escrita em PHP com o PHPmailer.
+                        responsável pelo envio de emails escrita em PHP com o PHPMailer.
                     </p>
 
                     <div class="row mt-3 mb-3">
@@ -129,9 +128,6 @@
                         </div>
                     </div>
 
-                    <p></p>
-
-
                 </div>
             </div>
 
@@ -140,9 +136,7 @@
         <section class="mt-5 section-bg" id="habilidades" data-anime="left">
             <div class="container pb-5">
                 <h2 class='pt-5'>Habilidades</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis totam et ipsum iusto libero
-                    dolorum sequi, corrupti eligendi nulla itaque similique molestias id dolores architecto laudantium
-                    tempora incidunt consectetur?</p>
+                <p>Estas são as habilidades em algumas tecnologias que desenvolvi (e ainda continuo desenvolvendo) ao longo do tempo.</p>
 
                 <div class="row">
                     <div class="col-md-6">
@@ -229,7 +223,7 @@
                         <p class="mt-3 mb-0">Flask</p>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-label="Example with label"
-                                style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                                style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%
                             </div>
                         </div>
 
@@ -357,7 +351,8 @@
                             <h4>Estagiário em desenvolvimento C#</h4>
                             <h5>2015 - 2015</h5>
                             <p><em>Overlord</em></p>
-                            <p>Programador C# na startup Overlord, local onde atuei na criação de desenvolvimentos em jogos. Auxiliar na criação do
+                            <p>Programador C# na startup Overlord, local onde atuei na criação de desenvolvimentos em
+                                jogos. Auxiliar na criação do
                                 Game Design.</p>
                         </div>
                     </div>
@@ -384,12 +379,14 @@
                             <div class="row row-cols-1 row-cols-md-3 g-4">
                                 <div class="col">
                                     <div class="card">
-                                        <img src="../static/img/screen_code_coffee.jpg" class="card-img-top" alt="Code Coffee">
+                                        <img src="../static/img/screen_code_coffee.jpg" class="card-img-top"
+                                            alt="Code Coffee">
                                         <div class="card-body">
                                             <h5 class="card-title">Code Coffee</h5>
-                                            <p class="card-text">Uma simples landing page escrita em HTML, CSS e Javascript.</p>
+                                            <p class="card-text">Uma simples landing page escrita em HTML, CSS e
+                                                Javascript.</p>
                                             <div class="d-flex justify-content-center">
-                                                    <a href="https://adilson-strider.github.io/landing-page-coffee/"
+                                                <a href="https://adilson-strider.github.io/landing-page-coffee/"
                                                     target='_blank' class="btn btn-outline-dark me-3"><i
                                                         class="bi bi-github"></i></a>
                                             </div>
@@ -398,10 +395,12 @@
                                 </div>
                                 <div class="col">
                                     <div class="card">
-                                        <img src="../static/img/previsao-do-tempo.jpg" class="card-img-top img-fluid w-100" alt="print do blog">
+                                        <img src="../static/img/previsao-do-tempo.jpg"
+                                            class="card-img-top img-fluid w-100" alt="print do blog">
                                         <div class="card-body">
                                             <h5 class="card-title">Previsão do tempo</h5>
-                                            <p class="card-text">Feito em Javascript, consumindo a API da OpenWeatherMap.</p>
+                                            <p class="card-text">Feito em Javascript, consumindo a API da
+                                                OpenWeatherMap.</p>
                                             <div class="d-flex justify-content-center">
                                                 <a href="https://adilson-strider.github.io/weather-report-app/"
                                                     target='_blank' class="btn btn-outline-dark me-3"><i
@@ -417,9 +416,9 @@
                                             <h5 class="card-title">Título do projeto</h5>
                                             <p class="card-text">Descrição do projeto.</p>
                                             <div class="d-flex justify-content-center">
-                                                <a href="" target='_blank'
-                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
-                                                
+                                                <a href="" target='_blank' class="btn btn-outline-dark me-3"><i
+                                                        class="bi bi-github"></i></a>
+
                                             </div>
                                         </div>
                                     </div>
@@ -437,9 +436,9 @@
                                             <h5 class="card-title">Título do projeto</h5>
                                             <p class="card-text">Descrição do projeto.</p>
                                             <div class="d-flex justify-content-center">
-                                                <a href="" target='_blank'
-                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
-                                                
+                                                <a href="" target='_blank' class="btn btn-outline-dark me-3"><i
+                                                        class="bi bi-github"></i></a>
+
                                             </div>
 
                                         </div>
@@ -452,8 +451,7 @@
                                             <h5 class="card-title">Título do projeto</h5>
                                             <p class="card-text">Descrição do projeto.</p>
                                             <div class="d-flex justify-content-center">
-                                                <a href=""
-                                                    target='_blank' class="btn btn-outline-dark me-3"><i
+                                                <a href="" target='_blank' class="btn btn-outline-dark me-3"><i
                                                         class="bi bi-github"></i></a>
                                             </div>
                                         </div>
@@ -468,7 +466,7 @@
                                             <div class="d-flex justify-content-center">
                                                 <a href="https://github.com/codethi/thi.code" target='_blank'
                                                     class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
-                                                
+
                                             </div>
 
                                         </div>
@@ -526,33 +524,49 @@
 
                         <div class="card p-5 h-100 shadow border-0">
 
-                            <form method="POST" class="row g-3">
+                            <form method="POST" class="row g-3" action="enviar-email.php">
                                 <div class="col-md-6">
                                     <label for="nome" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="nome" name="nome">
+                                    <input type="text" class="form-control" id="nome" name="nome" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="assunto" class="form-label">Assunto</label>
-                                    <input type="text" class="form-control" id="assunto" name="assunto">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="text" class="form-control" id="email" name="email" required>
                                 </div>
                                 <div class="col-12">
                                     <label for="mensagem" class="form-label">Mensagem</label>
                                     <textarea type="text" class="form-control" id="mensagem"
-                                        placeholder="Digite sua mensagem" name="mensagem"></textarea>
+                                        placeholder="Digite sua mensagem" name="mensagem" required></textarea>
                                 </div>
 
                                 <div class="col-12 d-flex justify-content-center">
-                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                    <button id="enviar" type="submit" class="btn btn-primary">Enviar</button>
+
+                                    <button class="btn btn-primary" type="button" id="carregando" disabled>
+                                        <span class="spinner-border spinner-border-sm" role="status"
+                                            aria-hidden="true"></span>
+                                        Enviando...
+                                    </button>
                                 </div>
+
                             </form>
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
     </main>
+
+    <footer id="rodape">
+        <div class="container">
+            <div class="text-center">
+                &copy; Copyright <strong>Adilson</strong>
+            </div>
+        </div>
+    </footer>
 
     <!-- carregando bootstrap.js e script.js -->
     <script src="../static/bootstrap/js/bootstrap.bundle.js"></script>

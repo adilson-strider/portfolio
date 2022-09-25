@@ -49,3 +49,17 @@ animeScroll();
 window.addEventListener("scroll", ()=>{
   animeScroll();
 })
+
+// Alterna os botões
+
+const btnEnviar = document.querySelector('#enviar')
+const btnEnviarLoader = document.querySelector('#carregando')
+
+btnEnviar.addEventListener("click", ()=> {
+  btnEnviarLoader.style.display = "block";
+  btnEnviar.style.display = "none"
+})
+
+setTimeout(()=>{
+  document.querySelector('#alerta').style.display = 'none';
+}, 5000)
