@@ -8,7 +8,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require_once("../vendor/autoload.php");
+require_once("vendor/autoload.php");
 
 $mail = new PHPMailer(true);
 
@@ -42,7 +42,7 @@ try{
     $mail->send();
 
     echo "A mensagem foi enviada com sucesso!";
-    //echo "<meta http-equiv='refresh' content='1; URL=../index.php'>";
+    echo "<meta http-equiv='refresh' content='1; URL=../index.php'>";
 
 } catch (Exception $e) {
     echo "A mensagem não pôde ser enviada. Código do erro: {$mail->ErrorInfo}";
