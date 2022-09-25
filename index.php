@@ -101,7 +101,11 @@
                     <p>
                         Atualmente estudo o desenvolvimento de páginas utilizando o HTML, CSS com Bootstrap e
                         Javascript. Este portfólio foi construído utilizando essas tecnologias, sendo a parte Back-End
+<<<<<<< HEAD:index.php
                         responsável pelo envio de emails escrita em PHP com o PHPMailer.
+=======
+                        responsável pelo envio de emails escrita em Python com o Flask.
+>>>>>>> 4aaa3024c97bf9bfff6c1a0f8251bab5d70ecacf:templates/index.html
                     </p>
 
                     <div class="row mt-3 mb-3">
@@ -524,7 +528,11 @@
 
                         <div class="card p-5 h-100 shadow border-0">
 
+<<<<<<< HEAD:index.php
                             <form method="POST" class="row g-3" action="enviar-email.php">
+=======
+                            <form method="POST" class="row g-3" action="/send">
+>>>>>>> 4aaa3024c97bf9bfff6c1a0f8251bab5d70ecacf:templates/index.html
                                 <div class="col-md-6">
                                     <label for="nome" class="form-label">Nome</label>
                                     <input type="text" class="form-control" id="nome" name="nome" required>
@@ -558,6 +566,21 @@
             </div>
         </section>
 
+<<<<<<< HEAD:index.php
+=======
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
+
+            <i class="bi bi-check-circle-fill"></i> {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+>>>>>>> 4aaa3024c97bf9bfff6c1a0f8251bab5d70ecacf:templates/index.html
     </main>
 
     <footer id="rodape">
