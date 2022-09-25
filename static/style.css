@@ -136,7 +136,7 @@ i.menu-mobile {
     position: fixed;
     color: #fff;
     background-color: #149ddd;
-    right: 4rem;
+    right: 1rem;
     top: 1rem;
     font-size: 1.5rem;
     border-radius: 4rem;
@@ -221,6 +221,7 @@ i.menu-mobile {
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     color: #050d18;
+    margin-bottom: 10px;
 }
 
 .cv .cv-item h5 {
