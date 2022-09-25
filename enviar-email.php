@@ -9,7 +9,6 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 require_once("../vendor/autoload.php");
-require_once("config.php");
 
 $mail = new PHPMailer(true);
 
