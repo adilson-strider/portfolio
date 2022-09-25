@@ -1,6 +1,5 @@
 Flask==0.12.2
 Flask-Mail==0.9.1
-galternatives==0.92.2
 gunicorn==20.1.0
 
 
