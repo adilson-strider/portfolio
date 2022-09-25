@@ -20,8 +20,8 @@ try{
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp-mail.outlook.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = $user;                     //SMTP username
-    $mail->Password   = $pass;                               //SMTP password
+    $mail->Username   = 'exploit7@hotmail.com';                     //SMTP username
+    $mail->Password   = 'Q1w2e3Q1w2e3$';                               //SMTP password
     $mail->SMTPSecure = "tls";            //Enable implicit TLS encryption
     $mail->Port       = 587;  
 
@@ -43,7 +43,7 @@ try{
     $mail->send();
 
     echo "A mensagem foi enviada com sucesso!";
-    echo "<meta http-equiv='refresh' content='5; URL=index.php'>";
+    echo "<meta http-equiv='refresh' content='1; URL=index.php'>";
 
 } catch (Exception $e) {
     echo "A mensagem não pôde ser enviada. Código do erro: {$mail->ErrorInfo}";
