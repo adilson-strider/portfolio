@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <link rel="icon" href="img/asset-15.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <title>Meu portfólio</title>
+    <title>Meu portfólio ^^</title>
 </head>
 
 <body>
