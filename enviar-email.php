@@ -1,49 +1,32 @@
 <?php
+  //Variáveis
+  $nome = $_POST['nome'];
+  $email = $_POST['email'];
+  $mensagem = $_POST['mensagem'];
+  $data_envio = date('d/m/Y');
+  $hora_envio = date('H:i:s');
 
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$mensagem = $_POST['mensagem'];
+  //Corpo E-mail
+  $arquivo = "
+    <html>
+      <p><b>Nome: </b>$nome</p>
+      <p><b>E-mail: </b>$email</p>
+      <p><b>Mensagem: </b>$mensagem</p>
+      <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
+    </html>
+  ";
+  
+  //Emails para quem será enviado o formulário
+  $destino = "adilsonjunior.001@gmail.com";
+  $assunto = "Contato pelo Site";
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
+  //Este sempre deverá existir para garantir a exibição correta dos caracteres
+  $headers  = "MIME-Version: 1.0\n";
+  $headers .= "Content-type: text/html; charset=iso-8859-1\n";
+  $headers .= "From: $nome <$email>";
 
-require_once("vendor/autoload.php");
-
-$mail = new PHPMailer(true);
-
-try{
-
-    // Configurações do servidor
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp-mail.outlook.com';                     //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'exploit7@hotmail.com';                     //SMTP username
-    $mail->Password   = 'Q1w2e3Q1w2e3$';                               //SMTP password
-    $mail->SMTPSecure = tls;            //Enable implicit TLS encryption
-    $mail->Port       = 587;  
-
-    $mail->setFrom($mail->Username , 'Adilson');
-    $mail->addAddress($mail->Username , 'Adilson');     //Add a recipient
-    $mail->Subject = 'Fale comigo';
-
-    $conteudo_email = utf8_encode("
-    Você recebeu uma mensagem de $nome ($email):
-    <br><br>
-
-    Mensagem: <br>
-    $mensagem
-    ");
-
-    $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Body    = $conteudo_email;
-
-    $mail->send();
-
-    echo "A mensagem foi enviada com sucesso!";
-    echo "<meta http-equiv='refresh' content='1; URL=../index.php'>";
-
-} catch (Exception $e) {
-    echo "A mensagem não pôde ser enviada. Código do erro: {$mail->ErrorInfo}";
-}
+  //Enviar
+  mail($destino, $assunto, $arquivo, $headers);
+  
+  echo "<meta http-equiv='refresh' content='10;URL=../contato.html'>";
+?>
